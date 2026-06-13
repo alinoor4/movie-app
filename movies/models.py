@@ -13,7 +13,7 @@ class Genre(models.Model):
 class Movie(models.Model):
     name = models.CharField(max_length=255)
     releaseYear = models.IntegerField()
-    inStock = models.IntegerField()
+    stockAmount = models.IntegerField()
     price = models.FloatField()
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     dateCreated = models.DateTimeField(default=timezone.now)
