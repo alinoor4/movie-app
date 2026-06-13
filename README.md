@@ -1,1 +1,1 @@
-# movie-app
+# Movies Inventory Web App
