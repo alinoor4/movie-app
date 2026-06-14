@@ -118,6 +118,20 @@ For deployment, make sure to:
 
 ---
 
+## Screenshots
+
+> *Screenshots coming soon!*
+
+| Home / Movie List | Movie Detail |
+|---|---|
+| ![Home Page](screenshots/home.png) | ![Movie Detail](screenshots/detail.png) |
+
+| Admin Panel | API Response |
+|---|---|
+| ![Admin Panel](screenshots/admin.png) | ![API](screenshots/api.png) |
+
+---
+
 ## License
 
 This project is licensed under the [GPL-3.0 License](LICENSE).
