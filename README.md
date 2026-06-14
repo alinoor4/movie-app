@@ -122,13 +122,17 @@ For deployment, make sure to:
 
 ## Screenshots
 
-| Home / Movie List | Movie Detail |
+| Home | Movie List |
 |---|---|
-| ![Home Page](screenshots/home.png) | ![Movie Detail](screenshots/detail.png) |
+| ![Home](screenshot/home.png) | ![Movie List](screenshot/movielist.png) |
 
-| Admin Panel | API Response |
+| Movie Detail | Admin Panel |
 |---|---|
-| ![Admin Panel](screenshots/admin.png) | ![API](screenshots/api.png) |
+| ![Movie Detail](screenshot/details.png) | ![Admin Panel](screenshot/admin.png) |
+
+| API Response |
+|---|
+| ![API](screenshot/api.png) |
 
 ---
 
