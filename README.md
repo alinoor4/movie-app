@@ -1,6 +1,6 @@
 # Movie Inventory App
 
-A full-stack web application for managing a movie inventory, built with **Django** on the backend and a dynamic **JavaScript/CSS** frontend. The app exposes a REST API powered by **django-tastypie** and is deployed on **Heroku**.
+A full-stack web application for managing a movie inventory, built with **Django** on the backend and a dynamic **JavaScript/CSS** frontend. The app exposes a REST API powered by **django-tastypie**.
 
 ---
 
