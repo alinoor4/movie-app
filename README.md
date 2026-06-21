@@ -2,6 +2,8 @@
 
 A full-stack web application for managing a movie inventory, built with **Django** on the backend and a dynamic **JavaScript/CSS** frontend. The app exposes a REST API powered by **django-tastypie**.
 
+🔗 **Live Demo:** [https://movie-app-rxre.onrender.com/](https://movie-app-rxre.onrender.com/)
+
 ---
 
 ## Features
@@ -10,7 +12,7 @@ A full-stack web application for managing a movie inventory, built with **Django
 - RESTful API for movie data via django-tastypie
 - Admin panel for content management (via Django Admin + Netlify CMS config)
 - Static file serving with WhiteNoise (no external CDN required)
-- Production-ready with Gunicorn and a `Procfile`
+- Production-ready with Gunicorn, deployed on **Render**
 
 ---
 
@@ -23,7 +25,7 @@ A full-stack web application for managing a movie inventory, built with **Django
 | Frontend   | JavaScript, CSS, HTML             |
 | Database   | SQLite (development)              |
 | Server     | Gunicorn + WhiteNoise             |
-| Deployment | Heroku / Render (via `Procfile`)  |
+| Deployment | Render                            |
 
 ---
 
@@ -38,7 +40,7 @@ movie-app/
 ├── static/admin/      # Static files & CMS config
 ├── manage.py
 ├── requirements.txt
-├── Procfile           # For deployment
+├── Procfile           # For Render deployment
 └── db.sqlite3         # Development database
 ```
 
@@ -103,7 +105,9 @@ GET /api/v1/movie/{id}/
 
 ## Deployment
 
-The app includes a `Procfile` for easy deployment to **Heroku** or **Render**:
+The app is live on **Render**: [https://movie-app-rxre.onrender.com/](https://movie-app-rxre.onrender.com/)
+
+It is deployed using Gunicorn as the application server:
 
 ```
 web: gunicorn MovieApp.wsgi
@@ -111,10 +115,19 @@ web: gunicorn MovieApp.wsgi
 
 Static files are served via **WhiteNoise**, so no separate static file hosting is needed.
 
-For deployment, make sure to:
-- Set `DEBUG = False` in settings
-- Configure `ALLOWED_HOSTS`
-- Set a strong `SECRET_KEY` via environment variable
+### Steps to Deploy on Render
+
+1. Push your repository to GitHub.
+2. Go to [Render Dashboard](https://dashboard.render.com) → **New > Web Service**.
+3. Connect your GitHub repository and configure:
+
+   | Setting           | Value                             |
+   |-------------------|-----------------------------------|
+   | **Environment**   | Python                            |
+   | **Build Command** | `pip install -r requirements.txt` |
+   | **Start Command** | `gunicorn MovieApp.wsgi`          |
+
+5. Click **Deploy** — Render will build and serve the app automatically.
 
 ---
 
@@ -123,11 +136,9 @@ For deployment, make sure to:
 | Home | Movie List |
 |---|---|
 | ![Home](screenshot/home.png) | ![Movie List](screenshot/movielist.png) |
-
 | Movie Detail | Admin Panel |
 |---|---|
 | ![Movie Detail](screenshot/details.png) | ![Admin Panel](screenshot/admin.png) |
-
 | API Response |
 |---|
 | ![API](screenshot/api.png) |
