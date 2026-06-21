@@ -1,7 +1,5 @@
 # Movie Inventory App
 
-**Live Demo:** [pacific-harbor-51601-de2a85e45a38.herokuapp.com](https://pacific-harbor-51601-de2a85e45a38.herokuapp.com/)
-
 A full-stack web application for managing a movie inventory, built with **Django** on the backend and a dynamic **JavaScript/CSS** frontend. The app exposes a REST API powered by **django-tastypie** and is deployed on **Heroku**.
 
 ---
