@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2d%)*^dd2t-v6+%=u__4oyk770(-_w85hnxbz#(^+t8nx1nuim
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'pacific-harbor-51601-de2a85e45a38.herokuapp.com'
+    'movie-app-rxre.onrender.com'
 ]
 
 
